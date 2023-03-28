@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="620.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestionpayement.users.UsersFXMLController">
+   <children>
+      <BorderPane layoutY="-8.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="150.0" prefWidth="900.0" spacing="5.0" style="-fx-background-color: #01802f;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="127.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/us.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER_LEFT" maxHeight="140.0" prefHeight="135.0" prefWidth="425.0" spacing="3.0">
+                     <children>
+                        <HBox layoutX="10.0" layoutY="84.0" prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Matricule :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_mat" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="279.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_nom" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="335.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="97.0" prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_prenom" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="318.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="123.0" prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Fonction :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_fonction" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="309.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" layoutX="147.0" layoutY="15.0" maxHeight="140.0" prefHeight="105.0" prefWidth="360.0" spacing="6.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="103.0" style="-fx-border-color: black; -fx-border-radius: 5;" text="Déconnexion" textFill="#ff0042">
+                           <VBox.margin>
+                              <Insets left="250.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <HBox layoutX="10.0" layoutY="54.0" prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Eng.">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_date" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="279.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="84.0" prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_adresse" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="279.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_phone" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="279.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="97.0" prefHeight="26.0" prefWidth="496.0">
+                           <children>
+                              <Text fill="#ddd9d9" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail :">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="txt_mail" fill="#ddd9d9" layoutX="10.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="..." wrappingWidth="279.0029296875">
+                                 <font>
+                                    <Font name="Arial" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </HBox>
+         </top>
+         <center>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Historique des paiements">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="#01802f" layoutX="7.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LES PAIEMENTS" AnchorPane.leftAnchor="2.0">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TableView fx:id="table_historique" layoutY="32.0" maxWidth="900.0" minWidth="900.0" onMouseClicked="#loadSalaireInfo" prefHeight="196.0" prefWidth="900.0" tableMenuButtonVisible="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <columns>
+                                    <TableColumn fx:id="colH_matricule" prefWidth="75.0" text="Matricule" />
+                                    <TableColumn fx:id="colH_nom" prefWidth="75.0" text="Nom" />
+                                    <TableColumn fx:id="colH_prenom" prefWidth="75.0" text="Prénom" />
+                                    <TableColumn fx:id="colH_fonction" prefWidth="75.0" text="Fonction" />
+                                    <TableColumn fx:id="colH_salaire" prefWidth="73.0" text="Salaire base" />
+                                    <TableColumn fx:id="colH_heureSup" prefWidth="70.0" text="Heure Sup" />
+                                    <TableColumn fx:id="colH_bonus" prefWidth="63.0" text="Bonus" />
+                                    <TableColumn fx:id="colH_total" prefWidth="66.0" text="Total" />
+                                    <TableColumn fx:id="colH_du" prefWidth="108.0" text="Paye du" />
+                                    <TableColumn fx:id="colH_au" prefWidth="105.0" text="Paye au" />
+                                    <TableColumn fx:id="colH_datepay" prefWidth="105.0" text="Date payement" />
+                                 </columns>
+                              </TableView>
+                              <Text fx:id="txt_id" fill="#01802f" layoutX="158.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#01802f" layoutX="2.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RECLAMATIONS">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <GridPane layoutX="14.0" layoutY="264.0" prefHeight="168.0" prefWidth="206.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <TextField fx:id="tx_salaire" promptText="ID SALAIRE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="tx_matricule" layoutX="10.0" layoutY="12.0" promptText="MATRICULE PERSONNEL" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                    <TextField fx:id="tx_fontion" layoutX="10.0" layoutY="54.0" promptText="FONCTION" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                              </GridPane>
+                              <TextArea fx:id="txt_area" layoutX="229.0" layoutY="274.0" prefHeight="116.0" prefWidth="234.0" promptText="Ecrit votre réclamation ici" />
+                              <Button layoutX="229.0" layoutY="393.0" mnemonicParsing="false" onAction="#btn_Add" prefHeight="19.0" prefWidth="150.0" style="-fx-border-color: #01802f; -fx-border-radius: 5;" text="ENVOYER" textFill="#01802f" AnchorPane.rightAnchor="521.0">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                              <TableView layoutX="472.0" layoutY="272.0" prefHeight="147.0" prefWidth="416.0" tableMenuButtonVisible="true">
+                                <columns>
+                                  <TableColumn prefWidth="49.0" text="Id Recl." />
+                                  <TableColumn prefWidth="79.0" text="Id Sal" />
+                                    <TableColumn prefWidth="87.0" text="Matr Agent" />
+                                    <TableColumn prefWidth="56.0" text="Fonction" />
+                                    <TableColumn prefWidth="67.0" text="Reclamat" />
+                                    <TableColumn prefWidth="67.0" text="Etat" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
